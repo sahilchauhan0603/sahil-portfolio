@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Chauhan - Full-Stack Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-gradient"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-text">Sahil</span>
+                    <span class="logo-accent">Chauhan</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div class="scroll-progress"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">
+                    <span class="greeting-emoji">👋</span>
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="name-text">Sahil Chauhan</span>
+                </h1>
+                <div class="typing-container">
+                    <span class="typing-prefix">I'm a </span>
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Passionate Full-Stack Developer with expertise in MERN stack, currently pursuing B.Tech in Computer Science Engineering at GGSIPU. <br>Led development teams and built scalable web applications with focus on performance and user experience.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">9.45</div>
+                        <div class="stat-label">GPA</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">800+</div>
+                        <div class="stat-label">DSA Problems</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn--primary btn--animated">
+                        <span>View Projects</span>
+                        <i class="btn-icon">→</i>
+                    </a>
+                    <a href="#contact" class="btn btn--outline btn--animated">
+                        <span>Get In Touch</span>
+                        <i class="btn-icon">📧</i>
+                    </a>
+                </div>
+                <div class="social-preview">
+                    <a href="https://github.com/sahilchauhan0603" target="_blank" class="social-icon">
+                        <svg class="social-logo" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sahil-chauhan-a6a626265/" target="_blank" class="social-icon">
+                        <svg class="social-logo" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://leetcode.com/sahil0603/" target="_blank" class="social-icon">
+                        <svg class="social-logo" viewBox="0 0 24 24" fill="currentColor">
+                            <!-- Code brackets -->
+                            <path d="M8 6L3 12L8 18M16 6L21 12L16 18"/>
+                            <!-- Code lines -->
+                            <path d="M10 9L14 9M10 12L14 12M10 15L14 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-avatar">
+                <div class="avatar-container">
+                    <div class="avatar-frame">
+                        <div class="avatar-image">
+                            <img src="assets/sahil.jpg" alt="Sahil Chauhan" />
+                        </div>
+                    </div>
+                    <div class="avatar-glow"></div>
+                </div>
+                <div class="floating-badges">
+                    <div class="badge badge-1">React</div>
+                    <div class="badge badge-2">Node.js</div>
+                    <div class="badge badge-3">Go</div>
+                    <div class="badge badge-4">MongoDB</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Getting to know the person behind the code</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-main">
+                        <h3>Hello! I'm Sahil, a passionate developer from New Delhi, India.</h3>
+                        <p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.</p>
+                        <p>I'm currently pursuing my Bachelor's in Computer Science Engineering at GGSIPU, where I've maintained a stellar 9.45 GPA and achieved University Rank 3 in my first year.</p>
+                    </div>
+                    <div class="education-card">
+                        <div class="edu-header">
+                            <h4>🎓 Education</h4>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-degree">B.Tech Computer Science Engineering</div>
+                            <div class="edu-school">GGSIPU, Delhi, India</div>
+                            <div class="edu-duration">2022 - 2026</div>
+                            <div class="edu-grade">GPA: 9.45 | University Rank: 3</div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-degree">Higher Secondary Education</div>
+                            <div class="edu-school">Ramjas International School</div>
+                            <div class="edu-duration">2022</div>
+                            <div class="edu-grade">Class XII: 96.4% | Class X: 94.6%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🔭</div>
+                        <h4>Currently Working On</h4>
+                        <p>MERN stack projects and AWS Cloud Architecture</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🌱</div>
+                        <h4>Learning</h4>
+                        <p>Microservices & Advanced System Design</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">💬</div>
+                        <h4>Ask Me About</h4>
+                        <p>React, Node.js, Go, or Competitive Programming</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">⚡</div>
+                        <h4>Fun Fact</h4>
+                        <p>Deep passion for cars and latest automotive innovations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey and contributions</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="exp-card">
+                            <div class="exp-header">
+                                <div class="exp-title">Project Team Leader</div>
+                                <div class="exp-company">BPIT Tech Team</div>
+                                <div class="exp-type">Internship</div>
+                            </div>
+                            <div class="exp-duration">June 2024 - July 2024</div>
+                            <div class="exp-description">
+                                <ul class="exp-responsibilities">
+                                    <li><strong>Leadership:</strong> Led a 6-member team to deliver core features for the college society portal</li>
+                                    <li><strong>Backend:</strong> Developed a fast, secure and scalable backend using Golang</li>
+                                    <li><strong>Integration:</strong> Collaborated with front-end team for smooth deployment and system reliability</li>
+                                    <li><strong>Impact:</strong> Developed a platform to boost coordination across student societies in my college</li>
+                                </ul>
+                            </div>
+                            <div class="exp-technologies">
+                                <span class="tech-tag">Golang</span>
+                                <span class="tech-tag">Team Leadership</span>
+                                <span class="tech-tag">System Architecture</span>
+                                <span class="tech-tag">Project Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Tools and technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <h3 class="category-title">💻 Programming Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Go</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <h3 class="category-title">🖥️ Frontend Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Next.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tailwind CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <h3 class="category-title">⚙️ Backend Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Express.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">REST APIs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <h3 class="category-title">🗃️ Databases</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some things I've built recently</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/sahilchauhan0603/JobQuest" target="_blank" class="project-link">
+                                    <span>⚡</span> GitHub
+                                </a>
+                                <a href="https://jobquest-n8r2.onrender.com/" target="_blank" class="project-link">
+                                    <span>🚀</span> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <img src="assets/job.jpg" alt="JobQuest Screenshot" class="project-screenshot" />
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Full Stack • AI/ML</div>
+                        <h3 class="project-title">JobQuest - AI-Powered Job Matching Platform</h3>
+                        <p class="project-description">Revolutionizing job search with intelligent matching algorithms and real-time application tracking. Built with modern web technologies for optimal performance.</p>
+                        <ul class="project-features">
+                            <li>AI-driven job recommendations</li>
+                            <li>Real-time application dashboard</li>
+                            <li>Automated email notifications</li>
+                            <li>Employer analytics portal</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag primary">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">AI Chatbot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/sahilchauhan0603/ERP_Student" target="_blank" class="project-link">
+                                    <span>⚡</span> GitHub
+                                </a>
+                                <a href="https://erp-student-sm4v.onrender.com/" target="_blank" class="project-link">
+                                    <span>🚀</span> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <img src="assets/campus_pro.jpg" alt="BPIT CampusPro Screenshot" class="project-screenshot" />
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Full Stack • ERP</div>
+                        <h3 class="project-title">BPIT CampusPro</h3>
+                        <p class="project-description">Comprehensive college ERP system with multi-role registration and management capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag primary">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/sahilchauhan0603/Canvas_Draw_VS" target="_blank" class="project-link">
+                                    <span>⚡</span> GitHub
+                                </a>
+                                <a href="https://canvas-draw-wheat.vercel.app/" target="_blank" class="project-link">
+                                    <span>🚀</span> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <img src="assets/canvas.jpg" alt="Canvas Draw Screenshot" class="project-screenshot" />
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Frontend • Real-time</div>
+                        <h3 class="project-title">Canvas Draw</h3>
+                        <p class="project-description">Real-time collaborative drawing platform with room-based architecture and seamless user experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag primary">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Socket.IO</span>
+                            <span class="tech-tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/sahilchauhan0603/K-N_TaxMarks_Advisors" target="_blank" class="project-link">
+                                    <span>⚡</span> GitHub
+                                </a>
+                                <a href="https://kandn-taxmarks-advisors.onrender.com/" target="_blank" class="project-link">
+                                    <span>🚀</span> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <img src="assets/taxmarks.jpg" alt="K&N TaxMarks Advisors Screenshot" class="project-screenshot" />
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Full Stack • Business</div>
+                        <h3 class="project-title">K&N TaxMarks Advisors</h3>
+                        <p class="project-description">Professional tax and legal advisory platform with client management and document sharing capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag primary">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/sahilchauhan0603/Portfolio" target="_blank" class="project-link">
+                                    <span>⚡</span> GitHub
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <span>🚀</span> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <img src="assets/portfolio-screenshot.jpg" alt="Portfolio Website Screenshot" class="project-screenshot" />
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Frontend • Portfolio</div>
+                        <h3 class="project-title">Personal Portfolio Website</h3>
+                        <p class="project-description">Modern, responsive portfolio showcasing my skills, projects, and achievements with smooth animations and interactive elements.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag primary">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Achievements & Recognition</h2>
+                <p class="section-subtitle">Milestones and accomplishments along my journey</p>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-category">
+                    <h3 class="category-title">🎓 Academic Excellence</h3>
+                    <div class="achievement-item">
+                        <div class="achievement-icon">🏆</div>
+                        <div class="achievement-content">
+                            <h4>University Rank 3 - BTech 1st Year</h4>
+                            <p>Achieved University Rank 3 with 9.45 GPA, highlighting consistent academic excellence</p>
+                            <span class="achievement-date">2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3 class="category-title">💻 Competitive Programming and DSA</h3>
+                    <div class="achievement-item">
+                        <div class="achievement-icon">⚔️</div>
+                        <div class="achievement-content">
+                            <h4>800+ DSA Problems Solved</h4>
+                            <p>LeetCode Rating: 1725 (Top 11.36%) across LeetCode, GeeksforGeeks, and other platforms</p>
+                            <h4>Competitive Programming</h4>
+                            <p>2⭐ at CodeChef</p>
+                            <span class="achievement-date">2023-25</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3 class="category-title">🚀 Hackathons & Competitions</h3>
+                    <div class="achievement-item">
+                        <div class="achievement-icon">🎯</div>
+                        <div class="achievement-content">
+                            <h4>RTDS Hackathon - Round 2 Qualifier</h4>
+                            <p>Advanced to Round 2, selected from around 40 teams for innovative problem-solving and technical skills</p>
+                            <span class="achievement-date">May 2025</span>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-icon">🏅</div>
+                        <div class="achievement-content">
+                            <h4>SIH Internal Hackathon 2024</h4>
+                            <p>Qualified in Smart India Hackathon Internal Round at college level</p>
+                            <span class="achievement-date">September 2024</span>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-icon">🌟</div>
+                        <div class="achievement-content">
+                            <h4>National Level Hackathons</h4>
+                            <p>Participated in prestigious hackathons: Amazon HackOn and Flipkart Grid</p>
+                            <span class="achievement-date">2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certifications-section">
+                <h3 class="certifications-title">📜 Certifications</h3>
+                <div class="certifications-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">🏢</div>
+                        <div class="cert-content">
+                            <h4>6-week Internship</h4>
+                            <p>BPIT</p>
+                            <span class="cert-year">2024</span>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">⚡</div>
+                        <div class="cert-content">
+                            <h4>Advanced CPP</h4>
+                            <p>IIT Bombay</p>
+                            <span class="cert-year">2024</span>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">☕</div>
+                        <div class="cert-content">
+                            <h4>Advanced JAVA</h4>
+                            <p>IIT Bombay</p>
+                            <span class="cert-year">2024</span>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">🔧</div>
+                        <div class="cert-content">
+                            <h4>PHP/MySQL</h4>
+                            <p>IIT Bombay</p>
+                            <span class="cert-year">2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coding-profiles">
+                <h3 class="profiles-title">👨‍💻 Coding Profiles</h3>
+                <div class="profiles-grid">
+                    <a href="https://leetcode.com/sahil0603/" target="_blank" class="profile-card">
+                        <div class="profile-icon">🧩</div>
+                        <div class="profile-info">
+                            <h4>LeetCode</h4>
+                            <p>Rating: 1725 | Top 11.36%</p>
+                        </div>
+                    </a>
+                    <a href="https://www.geeksforgeeks.org/user/sahilchaucyel/" target="_blank" class="profile-card">
+                        <div class="profile-icon">💚</div>
+                        <div class="profile-info">
+                            <h4>GeeksforGeeks</h4>
+                            <p>Active Problem Solver</p>
+                        </div>
+                    </a>
+                    <a href="https://www.codechef.com/users/nice_king_802" target="_blank" class="profile-card">
+                        <div class="profile-icon">👨‍🍳</div>
+                        <div class="profile-info">
+                            <h4>CodeChef</h4>
+                            <p>Competitive Programmer</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's create something amazing together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3>Let's Connect!</h3>
+                        <p>I'm always interested in new opportunities, whether that's for a job, project collaboration, or just to chat about technology. Feel free to reach out!</p>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>New Delhi, 110051, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:sahilchauhan0603@gmail.com">sahilchauhan0603@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+919873449294">+91 9873449294</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sahil-chauhan-a6a626265/" target="_blank" class="social-link">
+                            <span class="social-icon">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/sahilchauhan0603" target="_blank" class="social-link">
+                            <span class="social-icon">⚡</span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://x.com/TheSahil061003" target="_blank" class="social-link">
+                            <span class="social-icon">🐦</span>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://www.instagram.com/sahilchauhan0603/" target="_blank" class="social-link">
+                            <span class="social-icon">📷</span>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <div class="form-card">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width btn--animated">
+                                <span>Send Message</span>
+                                <i class="btn-icon">🚀</i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Sahil Chauhan. Designed & Built with passion and modern web technologies.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Back to Top ↑</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
